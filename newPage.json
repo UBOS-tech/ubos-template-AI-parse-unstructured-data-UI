@@ -1,0 +1,713 @@
+[
+    {
+        "_id": "642be8da8740f0110000001d",
+        "applicationId": "marketplace",
+        "slug": "Parse unstructured data",
+        "createdAt": "2023-04-04T09:07:38.232Z",
+        "updatedAt": "2023-04-04T09:07:38.232Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:pages",
+                "groups": [],
+                "users": [
+                    null
+                ]
+            },
+            {
+                "permission": "manage:pages",
+                "groups": [],
+                "users": [
+                    null
+                ]
+            }
+        ],
+        "Page": {
+            "name": "Parse unstructured data",
+            "layouts": [
+                {
+                    "_id": "642be8da8740f0110000001e",
+                    "viewMode": false,
+                    "dsl": {
+                        "widgetName": "MainContainer",
+                        "backgroundColor": "none",
+                        "rightColumn": 1224,
+                        "snapColumns": 64,
+                        "widgetId": "0",
+                        "topRow": 0,
+                        "bottomRow": 1160,
+                        "parentRowSpace": 1,
+                        "type": "CANVAS_WIDGET",
+                        "detachFromLayout": true,
+                        "minHeight": 640,
+                        "dynamicBindingPathList": [],
+                        "parentColumnSpace": 1,
+                        "leftColumn": 0,
+                        "children": [
+                            {
+                                "width": 428,
+                                "height": 494,
+                                "canEscapeKeyClose": true,
+                                "animateLoading": true,
+                                "detachFromLayout": true,
+                                "canOutsideClickClose": true,
+                                "shouldScrollContents": true,
+                                "widgetName": "Modal_settingsCopy",
+                                "children": [
+                                    {
+                                        "isVisible": true,
+                                        "widgetName": "Canvas1Copy",
+                                        "version": 1,
+                                        "detachFromLayout": true,
+                                        "type": "CANVAS_WIDGET",
+                                        "hideCard": true,
+                                        "displayName": "Canvas",
+                                        "key": "ahosrna7zp",
+                                        "canExtend": true,
+                                        "isDisabled": false,
+                                        "shouldScrollContents": false,
+                                        "children": [
+                                            {
+                                                "isVisible": true,
+                                                "iconName": "cross",
+                                                "borderRadius": "SHARP",
+                                                "boxShadow": "NONE",
+                                                "buttonColor": "#2E3D49",
+                                                "buttonVariant": "TERTIARY",
+                                                "isDisabled": false,
+                                                "widgetName": "IconButton1Copy",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "ICON_BUTTON_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Icon Button",
+                                                "key": "tou063hai5",
+                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                "iconSize": 24,
+                                                "widgetId": "amcj1ez5mj",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "leftColumn": 56,
+                                                "rightColumn": 64,
+                                                "topRow": 1,
+                                                "bottomRow": 5,
+                                                "parentId": "v25yscsw3g",
+                                                "onClick": "{{closeModal('Modal_settingsCopy')}}",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "text": "Settings",
+                                                "fontSize": "HEADING1",
+                                                "fontStyle": "BOLD",
+                                                "textAlign": "LEFT",
+                                                "textColor": "#231F20",
+                                                "truncateButtonColor": "#FFC13D",
+                                                "widgetName": "Text2Copy",
+                                                "shouldTruncate": false,
+                                                "overflow": "NONE",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "TEXT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Text",
+                                                "key": "8ifvy7sglx",
+                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                "widgetId": "9bw5dlgck3",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "leftColumn": 0,
+                                                "rightColumn": 55,
+                                                "topRow": 1,
+                                                "bottomRow": 5,
+                                                "parentId": "v25yscsw3g",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": []
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "animateLoading": true,
+                                                "defaultSelectedRow": "0",
+                                                "label": "Data",
+                                                "widgetName": "Table1Copy",
+                                                "searchKey": "",
+                                                "textSize": "PARAGRAPH",
+                                                "horizontalAlignment": "LEFT",
+                                                "verticalAlignment": "CENTER",
+                                                "totalRecordsCount": 0,
+                                                "defaultPageSize": 0,
+                                                "isShowLoading": true,
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "tableData"
+                                                    },
+                                                    {
+                                                        "key": "primaryColumns.key.computedValue"
+                                                    },
+                                                    {
+                                                        "key": "primaryColumns.value.computedValue"
+                                                    }
+                                                ],
+                                                "primaryColumns": {
+                                                    "key": {
+                                                        "index": 0,
+                                                        "width": 150,
+                                                        "id": "key",
+                                                        "horizontalAlignment": "LEFT",
+                                                        "verticalAlignment": "CENTER",
+                                                        "columnType": "text",
+                                                        "textSize": "PARAGRAPH",
+                                                        "enableFilter": true,
+                                                        "enableSort": true,
+                                                        "isVisible": true,
+                                                        "isDisabled": false,
+                                                        "isCellVisible": true,
+                                                        "isDerived": false,
+                                                        "label": "key",
+                                                        "computedValue": "{{Table1Copy.sanitizedTableData.map((currentRow) => ( currentRow.key))}}",
+                                                        "cellBackground": "#E5EFFF "
+                                                    },
+                                                    "value": {
+                                                        "index": 1,
+                                                        "width": 150,
+                                                        "id": "value",
+                                                        "horizontalAlignment": "LEFT",
+                                                        "verticalAlignment": "CENTER",
+                                                        "columnType": "text",
+                                                        "textSize": "PARAGRAPH",
+                                                        "enableFilter": true,
+                                                        "enableSort": true,
+                                                        "isVisible": true,
+                                                        "isDisabled": false,
+                                                        "isCellVisible": true,
+                                                        "isDerived": false,
+                                                        "label": "value",
+                                                        "computedValue": "{{Table1Copy.sanitizedTableData.map((currentRow) => ( currentRow.value))}}",
+                                                        "cellBackground": "#E5EFFF "
+                                                    }
+                                                },
+                                                "derivedColumns": {},
+                                                "tableData": "{{create_parseData?.data?.settings }}\n\n",
+                                                "columnSizeMap": {
+                                                    "task": 245,
+                                                    "step": 62,
+                                                    "status": 75
+                                                },
+                                                "columnOrder": [
+                                                    "key",
+                                                    "value"
+                                                ],
+                                                "enableClientSideSearch": true,
+                                                "isVisibleSearch": false,
+                                                "isVisibleFilters": false,
+                                                "isVisibleDownload": false,
+                                                "isVisiblePagination": false,
+                                                "isSortable": true,
+                                                "delimiter": ",",
+                                                "version": 3,
+                                                "type": "TABLE_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Table",
+                                                "key": "7wfdjucus8",
+                                                "iconSVG": "/static/media/icon.db8a9cbd.svg",
+                                                "widgetId": "miyy7csuxw",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 6.5,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 1,
+                                                "rightColumn": 64,
+                                                "topRow": 7,
+                                                "bottomRow": 47,
+                                                "parentId": "v25yscsw3g",
+                                                "dynamicTriggerPathList": [],
+                                                "cellBackground": "#E5EFFF ",
+                                                "dynamicPropertyPathList": []
+                                            }
+                                        ],
+                                        "minHeight": 494,
+                                        "widgetId": "v25yscsw3g",
+                                        "renderMode": "CANVAS",
+                                        "isLoading": false,
+                                        "parentColumnSpace": 1,
+                                        "parentRowSpace": 1,
+                                        "leftColumn": 0,
+                                        "rightColumn": 249,
+                                        "topRow": 0,
+                                        "bottomRow": 490,
+                                        "parentId": "kpmg89xu1m",
+                                        "dynamicBindingPathList": [],
+                                        "dynamicTriggerPathList": []
+                                    }
+                                ],
+                                "version": 2,
+                                "type": "MODAL_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Modal",
+                                "key": "7fwmpn5xdc",
+                                "iconSVG": "/static/media/icon.4975978e.svg",
+                                "isCanvas": true,
+                                "widgetId": "kpmg89xu1m",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 10.375,
+                                "parentRowSpace": 10,
+                                "leftColumn": 18,
+                                "rightColumn": 42,
+                                "topRow": 91,
+                                "bottomRow": 115,
+                                "parentId": "0"
+                            },
+                            {
+                                "isVisible": true,
+                                "backgroundColor": "#F6F7F8",
+                                "widgetName": "GridLayout1",
+                                "containerStyle": "card",
+                                "borderColor": "transparent",
+                                "borderWidth": "0",
+                                "borderRadius": "0",
+                                "boxShadow": "NONE",
+                                "animateLoading": true,
+                                "removePadding": true,
+                                "children": [
+                                    {
+                                        "isVisible": true,
+                                        "widgetName": "GridLayoutCanvas1",
+                                        "version": 1,
+                                        "detachFromLayout": true,
+                                        "type": "GRID_LAYOUT_CANVAS_WIDGET",
+                                        "hideCard": true,
+                                        "displayName": "GridLayoutCanvas",
+                                        "key": "p025i2gqgc",
+                                        "containerStyle": "none",
+                                        "canExtend": false,
+                                        "children": [
+                                            {
+                                                "isVisible": true,
+                                                "text": "To use, you need to generate your own key,the instruction is at the link  ⇥ ",
+                                                "fontSize": "PARAGRAPH",
+                                                "fontStyle": "BOLD,UNDERLINE",
+                                                "textAlign": "LEFT",
+                                                "textColor": "#3366FF",
+                                                "truncateButtonColor": "#FFC13D",
+                                                "widgetName": "Text4Copy",
+                                                "shouldTruncate": false,
+                                                "overflow": "NONE",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "TEXT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Text",
+                                                "key": "pcgsjnm6y2",
+                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                "widgetId": "88o2hro035",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 29.84375,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 64,
+                                                "topRow": 44,
+                                                "bottomRow": 49,
+                                                "parentId": "96pag2jwn4",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ],
+                                                "onClick": "{{navigateTo('https://community.ubos.tech/vika/customersupportchatbot-1ac8/#openai', {},'NEW_WINDOW')}}",
+                                                "dynamicPropertyPathList": [],
+                                                "borderColor": "#3366FF",
+                                                "disableLink": false,
+                                                "borderWidth": ""
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "label": "OpenAI key",
+                                                "labelPosition": "Top",
+                                                "labelAlignment": "left",
+                                                "labelWidth": 5,
+                                                "widgetName": "Input1",
+                                                "version": 2,
+                                                "defaultText": "{{main.store.keyAI?main.store.keyAI:\"\"}}",
+                                                "iconAlign": "left",
+                                                "autoFocus": false,
+                                                "labelStyle": "BOLD",
+                                                "resetOnSubmit": true,
+                                                "isRequired": false,
+                                                "isDisabled": false,
+                                                "animateLoading": true,
+                                                "classStyle": "",
+                                                "inputType": "TEXT",
+                                                "buttonPosition": "right",
+                                                "type": "INPUT_WIDGET_V2",
+                                                "hideCard": false,
+                                                "displayName": "Input",
+                                                "key": "q35w6kja92",
+                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                "widgetId": "rxu5j1urul",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 29.84375,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 64,
+                                                "topRow": 49,
+                                                "bottomRow": 57,
+                                                "parentId": "96pag2jwn4",
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "defaultText"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onTextChanged"
+                                                    }
+                                                ],
+                                                "onTextChanged": "{{storeValue(\"keyAI\",Input1.text,true)}}",
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "onTextChanged"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "backgroundColor": "#FFFFFF",
+                                                "widgetName": "GridLayout2",
+                                                "containerStyle": "card",
+                                                "borderColor": "transparent",
+                                                "borderWidth": "0",
+                                                "borderRadius": "0",
+                                                "boxShadow": "NONE",
+                                                "animateLoading": true,
+                                                "removePadding": true,
+                                                "children": [
+                                                    {
+                                                        "isVisible": true,
+                                                        "widgetName": "GridLayoutCanvas2",
+                                                        "version": 1,
+                                                        "detachFromLayout": true,
+                                                        "type": "GRID_LAYOUT_CANVAS_WIDGET",
+                                                        "hideCard": true,
+                                                        "displayName": "GridLayoutCanvas",
+                                                        "key": "p025i2gqgc",
+                                                        "containerStyle": "none",
+                                                        "canExtend": false,
+                                                        "children": [
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "Parse unstructured data",
+                                                                "fontSize": "HEADING1",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text1",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "u1utwc3q37",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "w9yszidjsu",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 10.0625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 32,
+                                                                "topRow": 0,
+                                                                "bottomRow": 9,
+                                                                "parentId": "6hu09va66c",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "Settings",
+                                                                "buttonColor": "#2E3D49",
+                                                                "buttonVariant": "TERTIARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button3",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "36tmzaz71k",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "3wzc9q8gug",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 10.0625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 54,
+                                                                "rightColumn": 64,
+                                                                "topRow": 0,
+                                                                "bottomRow": 9,
+                                                                "parentId": "6hu09va66c",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "iconName": "settings",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{create_parseData.run();showModal('Modal_settingsCopy')}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "widgetId": "6hu09va66c",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 0,
+                                                        "rightColumn": null,
+                                                        "topRow": 0,
+                                                        "bottomRow": 110,
+                                                        "parentId": "kgahq2dj0e"
+                                                    }
+                                                ],
+                                                "version": 1,
+                                                "classStyle": "",
+                                                "type": "GRIDLAYOUT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Grid Layout",
+                                                "key": "xxv707s955",
+                                                "iconSVG": "/static/media/icon.5c440258.svg",
+                                                "isCanvas": true,
+                                                "widgetId": "kgahq2dj0e",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 10.375,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 64,
+                                                "topRow": 0,
+                                                "bottomRow": 11,
+                                                "parentId": "96pag2jwn4"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "label": "Prompt",
+                                                "labelPosition": "Top",
+                                                "labelAlignment": "left",
+                                                "labelWidth": 5,
+                                                "widgetName": "Input_prompt",
+                                                "version": 2,
+                                                "defaultText": "A table summarizing the fruits from Goocrux:\n\nThere are many fruits that were found on the recently discovered planet Goocrux. There are neoskizzles that grow there, which are purple and taste like candy. There are also loheckles, which are a grayish blue fruit and are very tart, a little bit like a lemon. Pounits are a bright green color and are more savory than sweet. There are also plenty of loopnovas which are a neon pink flavor and taste like cotton candy. Finally, there are fruits called glowls, which have a very sour and bitter taste which is acidic and caustic, and a pale orange tinge to them.\n\nlike that \n| Fruit | Color | Flavor |",
+                                                "iconAlign": "left",
+                                                "autoFocus": false,
+                                                "labelStyle": "BOLD",
+                                                "resetOnSubmit": true,
+                                                "isRequired": false,
+                                                "isDisabled": false,
+                                                "animateLoading": true,
+                                                "classStyle": "",
+                                                "inputType": "TEXT",
+                                                "buttonPosition": "right",
+                                                "type": "INPUT_WIDGET_V2",
+                                                "hideCard": false,
+                                                "displayName": "Input",
+                                                "key": "7ljgnok9fv",
+                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                "widgetId": "k4j4sfqe11",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 10.375,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 64,
+                                                "topRow": 13,
+                                                "bottomRow": 44,
+                                                "parentId": "96pag2jwn4",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [],
+                                                "labelTextSize": "HEADING3"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "label": "Sample response",
+                                                "labelPosition": "Top",
+                                                "labelAlignment": "left",
+                                                "labelWidth": 5,
+                                                "widgetName": "Input_response",
+                                                "version": 2,
+                                                "defaultText": "{{create_parseData?.data?.text ? create_parseData?.data?.text:`|------|------|-------|\n| Neoskizzles | Purple | Candy |\n| Loheckles | Grayish Blue | Tart, like a lemon |\n| Pounits | Bright Green | Savory |\n| Loopnovas | Neon Pink | Cotton Candy |\n| Glowls | Pale Orange | Sour and Bitter, acidic and caustic |`}}",
+                                                "iconAlign": "left",
+                                                "autoFocus": false,
+                                                "labelStyle": "BOLD",
+                                                "resetOnSubmit": true,
+                                                "isRequired": false,
+                                                "isDisabled": false,
+                                                "animateLoading": true,
+                                                "classStyle": "",
+                                                "inputType": "TEXT",
+                                                "buttonPosition": "right",
+                                                "type": "INPUT_WIDGET_V2",
+                                                "hideCard": false,
+                                                "displayName": "Input",
+                                                "key": "7ljgnok9fv",
+                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                "widgetId": "mdc9fk10j1",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 10.375,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 64,
+                                                "topRow": 74,
+                                                "bottomRow": 106,
+                                                "parentId": "96pag2jwn4",
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "defaultText"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": [],
+                                                "labelTextSize": "HEADING3"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "animateLoading": true,
+                                                "text": "Submit",
+                                                "buttonColor": "#629EF8 ",
+                                                "buttonVariant": "PRIMARY",
+                                                "placement": "CENTER",
+                                                "widgetName": "Button1Copy",
+                                                "isDisabled": "{{!Input1.text}}",
+                                                "isDefaultClickDisabled": true,
+                                                "recaptchaType": "V3",
+                                                "version": 1,
+                                                "classStyle": "",
+                                                "type": "BUTTON_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Button",
+                                                "key": "qqcsdps12k",
+                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                "widgetId": "d3bawimhlh",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 10.375,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 45,
+                                                "rightColumn": 64,
+                                                "topRow": 69,
+                                                "bottomRow": 73,
+                                                "parentId": "96pag2jwn4",
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "isDisabled"
+                                                    },
+                                                    {
+                                                        "key": "tooltip"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ],
+                                                "borderRadius": "ROUNDED",
+                                                "onClick": "\n{{create_parseData.run(()  => showAlert('succsses','success'), () => showAlert(create_parseData.data.payload,'error'))}}",
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    },
+                                                    {
+                                                        "key": "isDisabled"
+                                                    }
+                                                ],
+                                                "tooltip": "{{Button1Copy.isDisabled ? \"add OpenAI key\":\"Generate\" }}"
+                                            }
+                                        ],
+                                        "widgetId": "96pag2jwn4",
+                                        "renderMode": "CANVAS",
+                                        "isLoading": false,
+                                        "leftColumn": 0,
+                                        "rightColumn": null,
+                                        "topRow": 0,
+                                        "bottomRow": 1080,
+                                        "parentId": "3tfn3mc821"
+                                    }
+                                ],
+                                "version": 1,
+                                "classStyle": "",
+                                "type": "GRIDLAYOUT_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Grid Layout",
+                                "key": "xxv707s955",
+                                "iconSVG": "/static/media/icon.5c440258.svg",
+                                "isCanvas": true,
+                                "widgetId": "3tfn3mc821",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 10.6875,
+                                "parentRowSpace": 10,
+                                "leftColumn": 0,
+                                "rightColumn": 64,
+                                "topRow": 0,
+                                "bottomRow": 109,
+                                "parentId": "0",
+                                "dynamicBindingPathList": [],
+                                "dynamicTriggerPathList": []
+                            }
+                        ],
+                        "snapRows": 63,
+                        "containerStyle": "none",
+                        "canExtend": true,
+                        "version": 57
+                    },
+                    "widgetNames": [
+                        "MainContainer",
+                        "Modal_settingsCopy",
+                        "Canvas1Copy",
+                        "IconButton1Copy",
+                        "Text2Copy",
+                        "Table1Copy",
+                        "GridLayout1",
+                        "GridLayoutCanvas1",
+                        "Text4Copy",
+                        "Input1",
+                        "GridLayout2",
+                        "GridLayoutCanvas2",
+                        "Text1",
+                        "Button3",
+                        "Input_prompt",
+                        "Input_response",
+                        "Button1Copy"
+                    ],
+                    "deleted": false,
+                    "policies": [],
+                    "layoutOnLoadActions": [
+                        []
+                    ],
+                    "layoutOnCloseActions": [
+                        []
+                    ]
+                }
+            ],
+            "isHidden": false
+        }
+    }
+]
